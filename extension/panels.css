@@ -42,15 +42,15 @@ body, .tabs-container, .right-tools-panel {
 	border-bottom: 1px #E5E5E5 solid !important;
 	background-color: rgba(243,243,243,0.85) !important;
 }
+.search-result-item.unread {
+	background-color: white !important;
+}
 .search-result-item.active {
 	background-color: #F9F9E0 !important;
 	color: black !important;
 }
 .search-result-item.active .item-snippet {
 	color: #7D7D7D !important;
-}
-.search-result-item.unread {
-	background-color: white !important;
 }
 
 /* Left side tabs */
