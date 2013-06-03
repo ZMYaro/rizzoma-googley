@@ -1,0 +1,51 @@
+.add-participant-block .add-form, .share-section .wave-share-popup, .popup-menu-container, .ctm, .ctm .tooltip, .chrome-app-popup, .tips-video-popup, .crowd-popup, .link-popup, .widget-window {
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+	border: 1px solid rgba(0,0,0,0.2) !important;
+	border-radius: 0 !important;
+	padding: 4px 0 !important;
+}
+
+.add-participant-block .add-form .internal-container, .manage-participants-form .internal-container, .share-section .internal-container, .popup-menu-container .internal-container, .widget-window .widget-window-body, .account-popup .internal-container, .ctm .internal-container, .ctm .tooltip .internal-container, .chrome-app-popup .internal-container, .tips-video-popup .internal-container {
+	background-color: transparent !important;
+	border-color: transparent !important;
+}
+
+/* Menu items */
+.settings-menu a, .help-menu a {
+	color: #333 !important;
+	font-size: 13px !important;
+	/*padding: 2px 8em 2px 30px !important;*/
+	padding: 6px 10px !important;
+}
+.role-selector-popup .role {
+	margin: 0 !important;
+	padding: 2px 10px 2px 0 !important;
+}
+.settings-menu a:hover, .help-menu a:hover, .role-selector-popup .role:hover {
+	background-color: #EEE !important;
+	color: #333 !important;
+}
+
+/* Errors and warnings */
+.wave-error, .wave-warning, .error-message-container, .wave-loading-indicator {
+	background: #F9EDBE !important;
+	border: 1px solid #F0C36D !important;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+	color: #222 !important;
+	padding: 0 10px !important;
+}
+
+/* Text input boxes */
+.add-form .internal-container .input-email, .manage-participants-form .showing-participants-id, .share-section .wave-url, .widget-window-body .outer-input, .text-input, .account-merge-form-container .secondary-email-input, .link-name div, .skype-id-input {
+	border: 1px solid !important;
+	border-color: #C0C0C0 #D9D9D9 #D9D9D9 !important;
+	border-radius: 0 !important;
+}
+.add-form:hover .internal-container .input-email:hover, .manage-participants-form .showing-participants-id:hover, .share-section .wave-url:hover, .widget-window-body .outer-input:hover, .text-input:hover, .account-merge-form-container .secondary-email-input:hover, .link-name div:hover, .skype-id-input:hover {
+	border-color: #A0A0A0 #B9B9B9 #B9B9B9 !important;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1) !important;
+}
+.add-form:active .internal-container .input-email:active, .manage-participants-form .showing-participants-id:active, .share-section .wave-url:active, .widget-window-body .outer-input:active, .text-input:active, .account-merge-form-container .secondary-email-input:active, .link-name div:active, .skype-id-input:active {
+	border-color: #4D90FE !important;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.3) !important;
+}

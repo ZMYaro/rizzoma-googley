@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "Googley Styles for Rizzoma",
+	"version": "0.9.1",
+	"description": "Changes the Rizzoma interface to look like Gmail and other Google apps.",
+	"icons": {
+	},
+	
+	"permissions": [
+		"cookies",
+		"*://rizzoma.com/topic/*",
+		"*://pre.rizzoma.com/topic/*"
+	],
+	
+	"content_scripts": [{
+		"matches": [
+			"*://rizzoma.com/topic/*",
+			"*://pre.rizzoma.com/topic/*"
+		],
+		"css": [
+			"panels.css",
+			"buttons.css",
+			"popups.css"
+		]
+	}]
+}

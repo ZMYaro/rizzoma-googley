@@ -1,0 +1,48 @@
+.common-create-wave-by-wizard, .create-wave-by-wizard, .create-wave, .add-block-button, .manage-participants-form button, .delete-from-wave, .selectBox.button-like, a.button-like, .wave-share-button, .show-more-participants, .mention-recipient-popup button, .task-recipient-popup button, :not(.range-menu) > .button,
+.settings-section {
+	background: linear-gradient(#F5F5F5,#F1F1F1) !important;
+	box-shadow: none !important;
+	border: 1px solid rgba(0,0,0,0.1) !important;
+	border-radius: 2px;
+	color: #444 !important;
+}
+
+.common-create-wave-by-wizard:not([disabled="disabled"]):hover, .create-wave-by-wizard:not([disabled="disabled"]):hover, .create-wave:not([disabled="disabled"]):hover, .add-block-button:not([disabled="disabled"]):hover, .manage-participants-form button:hover, .delete-from-wave:not([disabled="disabled"]):hover, .wave-share-button:not([disabled="disabled"]):hover, .show-more-participants:not([disabled="disabled"]):hover, .selectBox.button-like:not(.selectBox-disabled):hover, a.button-like:hover, .mention-recipient-popup button:not([disabled="disabled"]):hover, .task-recipient-popup button:not([disabled="disabled"]):hover, :not(.range-menu) > .button:not([disabled="disabled"]):hover,
+.settings-section:hover {
+	background: linear-gradient(#F8F8F8,#F1F1F1) !important;
+	box-shadow: none !important;
+	border-color: #C6C6C6 !important;
+	color: #444 !important;
+
+}
+.common-create-wave-by-wizard:not([disabled="disabled"]):active, .create-wave-by-wizard:not([disabled="disabled"]):active, .create-wave:not([disabled="disabled"]):active, .add-block-button:not([disabled="disabled"]):active, .manage-participants-form button:active, .delete-from-wave:not([disabled="disabled"]):active, .wave-share-button:not([disabled="disabled"]):active, .show-more-participants:not([disabled="disabled"]):active, .selectBox.button-like:not(.selectBox-disabled):active, a.button-like:active, .mention-recipient-popup button:not([disabled="disabled"]):active, .task-recipient-popup button:not([disabled="disabled"]):active, :not(.range-menu) > .button:not([disabled="disabled"]):active,
+.settings-section:active {
+	background: linear-gradient(#EEE,#E0E0E0) !important;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1) !important;
+	border-color: #CCC !important;
+}
+
+.common-create-wave-by-wizard:focus, .create-wave-by-wizard:focus, .create-wave:focus, .add-block-button:focus, .manage-participants-form button:focus, .delete-from-wave:focus, .selectBox.button-like:focus, a.button-like:focus, .wave-share-button:focus, .show-more-participants:focus, .mention-recipient-popup button:focus, .task-recipient-popup button:focus, :not(.range-menu) > .button:focus {
+	border: 1px solid #4D90FE !important;
+}
+
+/* New wave/wizard button container */
+.new-topic-buttons {
+	border: 0 none transparent !important;
+}
+
+
+/* Wave panel gear button container (made to look like a button) */
+.settings-section {
+	margin-top: 0 !important;
+}
+/* Wave panel gear button */
+.settings-section .show-settings-button {
+	height: 19px !important;
+	box-sizing: content-box !important;
+	background-clip: content-box !important;
+	border-style: solid !important;
+	border-color: transparent !important;
+	border-width: 7px 0 6px 6px !important;
+	margin: -1px !important;
+}

@@ -1,0 +1,113 @@
+/* Remove shadows */
+.navigation-container, .wave-container {
+	box-shadow: none !important;
+}
+/*.wave-container {
+	box-shadow: -1px 0 0 0 rgba(0,0,0,0.1) !important;
+}*/
+
+/* Replace dark gray background */
+body, .tabs-container, .right-tools-panel {
+	background: white !important;
+}
+/* Add light gray headers */
+.new-topic-buttons::before, .search-header, .resizer, .wave-header, .account-container {
+	background: #F1F1F1 !important;
+	border-bottom: 1px solid #ccc !important;
+	box-sizing: border-box;
+}
+.new-topic-buttons::before {
+	content: "";
+	position: absolute;
+	left: -10px;
+	top: -10px;
+	width: 79px;
+	height: 50px;
+	z-index: -1;
+}
+.account-button {
+	background-color: transparent !important;
+}
+/* Add white search panel background */
+.search-lists-container {
+	background-color: white !important;
+	/*border-left: 1px solid #E5E5E5;*/
+}
+
+/* Search results */
+.search-results {
+	border-top: 0 none transparent !important;
+}
+.search-result-item {
+	border-bottom: 1px #E5E5E5 solid !important;
+	background-color: rgba(243,243,243,0.85) !important;
+}
+.search-result-item.active {
+	background-color: #F9F9E0 !important;
+	color: black !important;
+}
+.search-result-item.active .item-snippet {
+	color: #7D7D7D !important;
+}
+.search-result-item.unread {
+	background-color: white !important;
+}
+
+/* Left side tabs */
+.tabs-container .tab,
+/* Right side expand/collapse buttons */
+.right-tools-panel .hide-replies, .right-tools-panel .show-replies,
+/* Text/mind map view tabs */
+.right-tools-panel .text-view, .right-tools-panel .mindmap-view {
+	background-color: transparent !important;
+	color: black !important;
+	border-radius: 0 !important;
+	border: 0 none transparent !important;
+}
+.tabs-container .tab:not(.help-tab),
+.right-tools-panel .show-replies {
+	position: relative !important;
+}
+/* Left side active tab */
+.tabs-container .tab.active,
+/* Text/mind map view active tab */
+.right-tools-panel:not(.mindmap-view) .text-view, .mindmap-view.right-tools-panel .mindmap-view {
+	background: transparent none !important;
+	color: #DD4B39 !important;
+	font-weight: bold;
+}
+.tabs-container .tab.active::before,
+.right-tools-panel:not(.mindmap-view) .text-view::before, .mindmap-view.right-tools-panel .mindmap-view::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 4px;
+	background-color: #DD4B39;
+}
+.tabs-container .tab:hover,
+.right-tools-panel .hide-replies:hover, .right-tools-panel .show-replies:hover,
+.right-tools-panel .text-view:hover, .right-tools-panel .mindmap-view:hover {
+	background-color: #EEE !important;
+}
+.tabs-container .tab.topics {
+	padding-top: 9px !important;
+	margin-top: 54px !important;
+	height: 80px !important;
+}
+.tabs-container .pict, .tabs-container .topics-pict {
+	margin-top: 2px !important;
+	background-position-x: -37px !important
+}
+
+.right-tools-panel .show-replies::after {
+	content: "";
+	position: absolute;
+	left: 1px;
+	right: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 1px;
+	background-color: #E5E5E5;
+}
