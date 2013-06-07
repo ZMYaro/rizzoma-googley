@@ -11,7 +11,7 @@ body, .tabs-container, .right-tools-panel {
 	background: white !important;
 }
 /* Add light gray headers */
-.new-topic-buttons::before, .search-header, .resizer, .wave-header, .account-container {
+.new-topic-buttons::before, .search-header, .message-list-header, .task-list-header, .public-search-header, .market-panel-header, .resizer, .wave-header, .account-container {
 	background: #F1F1F1 !important;
 	border-bottom: 1px solid #ccc !important;
 	box-sizing: border-box;
@@ -68,13 +68,19 @@ body, .tabs-container, .right-tools-panel {
 .right-tools-panel .show-replies {
 	position: relative !important;
 }
+.right-tools-panel .text-view .description, .right-tools-panel .mindmap-view .description {
+	font-size: 10px !important;
+	font-weight: normal !important;
+}
+
 /* Left side active tab */
 .tabs-container .tab.active,
 /* Text/mind map view active tab */
-.right-tools-panel:not(.mindmap-view) .text-view, .mindmap-view.right-tools-panel .mindmap-view {
+.right-tools-panel:not(.mindmap-view) .text-view, .mindmap-view.right-tools-panel .mindmap-view,
+.right-tools-panel:not(.mindmap-view) .text-view .description, .mindmap-view.right-tools-panel .mindmap-view .description {
 	background: transparent none !important;
 	color: #DD4B39 !important;
-	font-weight: bold;
+	font-weight: bold !important;
 }
 .tabs-container .tab.active::before,
 .right-tools-panel:not(.mindmap-view) .text-view::before, .mindmap-view.right-tools-panel .mindmap-view::before {
