@@ -1,4 +1,4 @@
-.add-participant-block .add-form, .share-section .wave-share-popup, .popup-menu-container, .ctm, .ctm .tooltip, .chrome-app-popup, .tips-video-popup, .crowd-popup, .link-popup, .widget-window {
+.add-participant-block .add-form, .share-section .wave-share-popup, .popup-menu-container, .ctm, .ctm .tooltip, .chrome-app-popup, .tips-video-popup, .crowd-popup, .link-popup, .widget-window, .blip-menu .other-blipmenu-container {
 	box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
 	border: 1px solid rgba(0,0,0,0.2) !important;
 	border-radius: 0 !important;
