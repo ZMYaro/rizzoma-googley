@@ -34,25 +34,59 @@ body, .tabs-container, .right-tools-panel {
 	/*border-left: 1px solid #E5E5E5;*/
 }
 
-/* Search results */
-.search-results {
+/* Search panel */
+.search-results, .message-list-results, .task-list-results, .public-search-results, .market-panel-results {
 	border-top: 0 none transparent !important;
 }
-.search-result-item {
+.search-result-item, .market-panel-result {
 	border-bottom: 1px #E5E5E5 solid !important;
 	background-color: rgba(243,243,243,0.85) !important;
 }
-.search-result-item.unread {
+.search-result-item.unread, .market-panel-result {
 	background-color: white !important;
 }
-.search-result-item.active {
+.search-result-item.active, .search-result-item.active .task-time-info, .task-list-container .completed-task-list .search-result-item.active .task-time-info.overdue, .market-panel-result.active {
 	background-color: #F9F9E0 !important;
 	color: black !important;
 }
-.search-result-item.active .item-snippet {
+.market-panel-container .active .title {
+	color: black !important;
+}
+.search-result-item.active .item-snippet,
+.market-panel-container .active .snippet {
 	color: #7D7D7D !important;
 }
 
+/* Market tabs */
+.market-panel-container .market-items-filter {
+	margin: 5px 2px !important;
+	padding: 10px 16px !important;
+	border: 0 none transparent !important;
+	border-radius: 0 !important;
+	background: transparent !important;
+	position: relative !important;
+}
+.market-panel-container .market-items-filter:first-child {
+	margin-left: 24px !important;
+}
+.market-panel-container .market-items-filter:hover {
+	background-color: #CCC !important;
+}
+.market-panel-container .market-items-filter.pressed {
+	border: 0 none transparent !important;
+	background-color: transparent !important;
+	color: #DD4B39 !important;
+	/*font-weight: bold !important;*/
+}
+.market-panel-container .market-items-filter.pressed::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 3px;
+	background-color: #DD4B39;
+}
 /* Left side tabs */
 .tabs-container .tab,
 /* Right side expand/collapse buttons */
