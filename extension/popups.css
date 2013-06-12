@@ -29,13 +29,19 @@
 	color: #333 !important;
 }
 
-/* Errors and warnings */
-.wave-error, .wave-warning, .error-message-container, .wave-loading-indicator {
+/* Errors, warnings, and status indicators */
+.search-lists-container .status-bar, .wave-error, .wave-warning, .error-message-container, .wave-loading-indicator {
 	background: #F9EDBE !important;
 	border: 1px solid #F0C36D !important;
+	border-radius: 2px !important;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
 	color: #222 !important;
 	padding: 0 10px !important;
+}
+.search-lists-container .status-bar {
+	width: auto !important;
+	left: 1% !important;
+	right: 1% !important;
 }
 
 /* Text input boxes */
