@@ -80,6 +80,10 @@
 .search-icon:focus {
 	box-shadow: inset 0 0 1px 0 white !important;
 }
+/* The search button for the WEG Loader for Rizzoma extension */
+.insert-gadget-container .search-icon {
+	height: 30px !important;
+}
 
 /* Green unread buttons */
 .search .global-next-unread {

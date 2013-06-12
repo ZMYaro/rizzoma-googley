@@ -54,8 +54,13 @@
 }
 
 /* The search boxes for different left tabs */
-.search-query, .message-list-query, .task-list-query, .public-search-query {
+input[type="search"], .search-query, .message-list-query, .task-list-query, .public-search-query {
 	height: 30px !important;
 	   border-top-right-radius: 2px !important;
 	border-bottom-right-radius: 2px !important;
+}
+
+/* The search box container for the WEG Loader for Rizzoma extension */
+.js-internal-container > div:not(.internal-container) {
+	margin-left: 4px !important;
 }
