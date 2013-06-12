@@ -9,7 +9,7 @@
 	display: inline-block !important;
 }
 
-.root-blip ~ .blip-container > .blip-menu-container {
+.root-blip ~ .blip-container > .blip-menu-container:not(.fixed) {
 	left: 24px !important;
 }
 
