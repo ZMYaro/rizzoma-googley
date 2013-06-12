@@ -84,19 +84,23 @@
 .blip-menu .other-blipmenu-container .triangle {
 	top: -4px !important;
 }
-.blip-container .blip-menu .other-blipmenu-container > .list-menu-button > button {
+
+.blip-container .blip-menu .other-blipmenu-container > .list-menu-button > button,
+                .blip-menu .other-blipmenu-container > .list-menu-button > button {
 	width: 100% !important;
 	background: transparent none !important;
 	border: 0px none transparent !important;
 	color: #333 !important;
 	box-shadow: none !important;
 }
-.blip-container .blip-menu .other-blipmenu-container > .list-menu-button > button:hover {
+.blip-container .blip-menu .other-blipmenu-container > .list-menu-button > button:hover,
+                .blip-menu .other-blipmenu-container > .list-menu-button > button:hover {
 	background: #EEE !important;
 	color: #333 !important;
 	box-shadow: none !important;
 }
-.blip-container .blip-menu .other-blipmenu-container > .list-menu-button > button:active {
+.blip-container .blip-menu .other-blipmenu-container > .list-menu-button > button:active,
+                .blip-menu .other-blipmenu-container > .list-menu-button > button:active {
 	background: #EEE !important;
 	color: #333 !important;
 	box-shadow: none !important;
