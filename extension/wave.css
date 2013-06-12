@@ -93,3 +93,15 @@
 .contributors .contributor {
 	float: left !important;
 }
+
+/* The last blip in the root thread */
+.root-blip:only-child, .root-blip ~ :last-child {
+	border-bottom: 0 none transparent !important;
+}
+
+.inner-wave-container,
+.topic-mindmap-container,
+/* The space after the last blip in the root thread */
+.last-root-blip-menu-cap {
+	background: white !important;
+}
