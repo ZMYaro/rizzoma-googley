@@ -39,16 +39,23 @@
 }
 
 /* Text input boxes */
-.add-form .internal-container .input-email, .manage-participants-form .showing-participants-id, .share-section .wave-url, .widget-window-body .outer-input, .text-input, .account-merge-form-container .secondary-email-input, .link-name div, .skype-id-input {
+.add-form .internal-container .input-email, .manage-participants-form .showing-participants-id, .share-section .wave-url, .widget-window-body .outer-input, .text-input, .account-merge-form-container .secondary-email-input, .link-name div, .skype-id-input, input[type="search"], .search-query, .message-list-query, .public-search-query, .task-list-query {
 	border: 1px solid !important;
 	border-color: #C0C0C0 #D9D9D9 #D9D9D9 !important;
 	border-radius: 0 !important;
 }
-.add-form:hover .internal-container .input-email:hover, .manage-participants-form .showing-participants-id:hover, .share-section .wave-url:hover, .widget-window-body .outer-input:hover, .text-input:hover, .account-merge-form-container .secondary-email-input:hover, .link-name div:hover, .skype-id-input:hover {
+.add-form:hover .internal-container .input-email:hover, .manage-participants-form .showing-participants-id:hover, .share-section .wave-url:hover, .widget-window-body .outer-input:hover, .text-input:hover, .account-merge-form-container .secondary-email-input:hover, .link-name div:hover, .skype-id-input:hover, input[type="search"]:hover, .search-query:hover, .message-list-query:hover, .public-search-query:hover, .task-list-query:hover {
 	border-color: #A0A0A0 #B9B9B9 #B9B9B9 !important;
 	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1) !important;
 }
-.add-form:active .internal-container .input-email:active, .manage-participants-form .showing-participants-id:active, .share-section .wave-url:active, .widget-window-body .outer-input:active, .text-input:active, .account-merge-form-container .secondary-email-input:active, .link-name div:active, .skype-id-input:active {
+.add-form:focus .internal-container .input-email:focus, .manage-participants-form .showing-participants-id:focus, .share-section .wave-url:focus, .widget-window-body .outer-input:focus, .text-input:focus, .account-merge-form-container .secondary-email-input:focus, .link-name div:focus, .skype-id-input:focus, input[type="search"]:focus, .search-query:focus, .message-list-query:focus, .public-search-query:focus, .task-list-query:focus {
 	border-color: #4D90FE !important;
 	box-shadow: inset 0 1px 2px rgba(0,0,0,0.3) !important;
+}
+
+/* The search boxes for different left tabs */
+.search-query, .message-list-query, .task-list-query, .public-search-query {
+	height: 30px !important;
+	   border-top-right-radius: 2px !important;
+	border-bottom-right-radius: 2px !important;
 }
