@@ -26,5 +26,10 @@
 			"wave.css",
 			"toolbars.css"
 		]
-	}]
+	}],
+	
+	"background": {
+		"scripts": ["setcookie.js"],
+		"persistent": false
+	}
 }
