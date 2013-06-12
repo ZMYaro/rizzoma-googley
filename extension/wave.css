@@ -1,20 +1,7 @@
-.container-blip {
-	padding-top: 0 !important;
-}
-.editor-container {
-	margin-left: 36px !important;
-}
-.blips-container {
-	/*margin-left: 12px !important;*/
-	box-shadow: none !important;
-}
-.wave-blips > .blip-container > .editor-container {
-	margin-left: -24px !important;
-}
-
 .blip-container {
 	border: 1px solid #D8D8D8 !important;
 	border-top-width: 0 !important;
+	padding: 10px 0 8px 0 !important;
 }
 .blip-container:first-child {
 	/*border-top-color: #D8D8D8 !important;*/
@@ -45,11 +32,28 @@
 }
 .root-blip {
 	border-top: none !important;
+	padding-top: 30px !important;
 }
 .root-blip, .root-blip ~ .blip-container {
-	border-left: none !important;
-	border-right: none !important;
+	padding-right: 7px !important;
 }
+.container-blip {
+	border: none !important;
+	padding-top: 0 !important;
+}
+.editor-container {
+	margin-left: 36px !important;
+}
+.blips-container {
+	/*margin-left: 12px !important;*/
+	box-shadow: none !important;
+}
+.wave-blips > .blip-container > .editor-container {
+	/*margin-left: -24px !important;*/
+	margin-left: 0 !important;
+}
+
+
 .blip-menu-container:not(.fixed) {
 	left: -1px !important;
 }
@@ -62,7 +66,7 @@
 	
 	left: -1px !important;
 	right: -1px !important;
-	bottom: -18px !important;
+	bottom: -22px !important;
 }
 .bottom-blip-menu:hover {
 	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1) !important;
@@ -96,7 +100,7 @@
 
 /* The last blip in the root thread */
 .root-blip:only-child, .root-blip ~ :last-child {
-	border-bottom: 0 none transparent !important;
+	border-bottom: none !important;
 }
 
 .inner-wave-container,
