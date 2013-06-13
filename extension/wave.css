@@ -80,9 +80,17 @@
 }
 .bottom-blip-menu button div.text {
 	color: #999 !important;
+	margin-left: 45px !important;
+	margin-top: -3px !important;
+}
+.bottom-blip-menu button div.avatar {
+	left: 5px !important;
+	right: auto !important;
 }
 .bottom-blip-menu button div.gradient {
 	background: linear-gradient(rgba(255,255,255,0) 30%, rgba(255,255,255,1) 80%) !important;
+	left: 4px !important;
+	right: auto !important;
 }
 
 .blip-info {
