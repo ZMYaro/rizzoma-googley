@@ -127,7 +127,7 @@
 
 /* The green bar to the left of unread blips. */
 .unread-indicator {
-	left: -37px !important;
+	left: -35px !important;
 	top: -8px !important;
 	bottom: 0 !important;
 }
