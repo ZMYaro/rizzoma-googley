@@ -30,6 +30,13 @@
 	padding-right: 7px !important;
 	border-radius: 0 !important;
 }
+/* The last blip in the root thread */
+.root-blip:only-child, .root-blip ~ :last-child {
+	border-bottom-width: 1px !important;
+	 border-bottom-left-radius: 2px !important;
+	border-bottom-right-radius: 2px !important;
+}
+
 .blip-container.active.edit-mode {
 	border-color: #4D90FE !important;
 	box-shadow: inset 0 1px 2px rgba(0,0,0,0.3) !important;
@@ -108,11 +115,6 @@
 }
 .contributors .contributor {
 	float: left !important;
-}
-
-/* The last blip in the root thread */
-.root-blip:only-child, .root-blip ~ :last-child {
-	border-bottom: none !important;
 }
 
 .inner-wave-container,
