@@ -27,7 +27,19 @@ body, .tabs-container, .right-tools-panel {
 }
 .account-button {
 	background-color: transparent !important;
+	margin-left: 18px !important;
+	margin-top: 9px !important;
 }
+/* Top-right profile picture */
+.account-button .avatar {
+	border: 1px solid #C6C6C6 !important;
+	border-radius: 0 !important;
+}
+/* Top-right profile picture drop-down arrow */
+.account-show-popup {
+	-webkit-filter: brightness(0.55);
+}
+
 /* Add white search panel background */
 .search-lists-container {
 	background-color: white !important;
