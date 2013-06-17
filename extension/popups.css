@@ -1,5 +1,5 @@
 .add-participant-block .add-form, .share-section .wave-share-popup, .popup-menu-container, .ctm, .ctm .tooltip, .chrome-app-popup, .tips-video-popup, .crowd-popup, .link-popup, .widget-window, .blip-menu .other-blipmenu-container,
-.selectBox-dropdown-menu.button-like-selectBox-dropdown-menu, .selectBox-dropdown-menu.add-button-select-selectBox-dropdown-menu,
+.selectBox-dropdown-menu,
 .account-popup .name-variants, .account-popup .email-variants {
 	background-color: white !important;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
@@ -14,7 +14,7 @@
 }
 
 /* Menu items */
-.settings-menu a, .help-menu a, .selectBox-dropdown-menu.button-like-selectBox-dropdown-menu li a,
+.settings-menu a, .help-menu a, .selectBox-dropdown-menu li a,
 .account-popup .name-variant, .account-popup .email-variant {
 	color: #333 !important;
 	text-shadow: none !important;
@@ -26,7 +26,7 @@
 	margin: 0 !important;
 	padding: 2px 10px 2px 0 !important;
 }
-.settings-menu a:hover, .help-menu a:hover, .role-selector-popup .role:hover, .selectBox-dropdown-menu.button-like-selectBox-dropdown-menu li a:hover,
+.settings-menu a:hover, .help-menu a:hover, .role-selector-popup .role:hover, .selectBox-dropdown-menu li a:hover,
 .account-popup .name-variant:hover, .account-popup .email-variant:hover {
 	background-color: #EEE !important;
 	color: #333 !important;

@@ -69,6 +69,20 @@ body, .tabs-container, .right-tools-panel {
 	color: #7D7D7D !important;
 }
 
+/* Followed/Unfollowed/All menu */
+.search-query-container > .selectBox-dropdown {
+	background: #DAE4F6 !important;
+	border-radius: 2px !important;
+	color: #222 !important;
+	outline: none !important;
+}
+.selectBox-dropdown .selectBox-arrow {
+	-webkit-filter: brightness(0.2) !important;
+}
+.search-query-container > .selectBox-dropdown.selectBox-menuShowing {
+	background: #A6D7F5 !important;
+}
+
 /* Market tabs */
 .market-panel-container .market-items-filter {
 	margin: 5px 2px !important;
