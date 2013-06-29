@@ -5,6 +5,7 @@
 	border: 1px solid rgba(0,0,0,0.1) !important;
 	border-radius: 2px !important;
 	color: #444 !important;
+	text-shadow: none !important;
 }
 
 .common-create-wave-by-wizard:not([disabled="disabled"]):hover, .create-wave-by-wizard:not([disabled="disabled"]):hover, .create-wave:not([disabled="disabled"]):hover, .add-block-button:not([disabled="disabled"]):hover, .manage-participants-form button:hover, .delete-from-wave:not([disabled="disabled"]):hover, .wave-share-button:not([disabled="disabled"]):hover, .show-more-participants:not([disabled="disabled"]):hover, .selectBox.button-like:not(.selectBox-disabled):hover, a.button-like:hover, .mention-recipient-popup button:not([disabled="disabled"]):hover, .task-recipient-popup button:not([disabled="disabled"]):hover, :not(.range-menu) > .button:not([disabled="disabled"]):hover,
