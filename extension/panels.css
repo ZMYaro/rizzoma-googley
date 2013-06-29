@@ -150,11 +150,13 @@ body, .tabs-container, .right-tools-panel {
 	font-weight: bold !important;
 }
 /* Left side active tab icon */
-.tabs-container .active .pict,
+.tabs-container .active .pict {
+	-webkit-filter: hue-rotate(150deg) saturate(4) brightness(1.5);
+}
 /* Text/mind map view active tab icon */
 .right-tools-panel:not(.mindmap-view) .text-view .icon,
 .right-tools-panel.mindmap-view .mindmap-view .icon {
-	-webkit-filter: hue-rotate(150deg) saturate(4) brightness(1.5);
+	-webkit-filter: hue-rotate(150deg);
 }
 .tabs-container .tab.active::before,
 .right-tools-panel:not(.mindmap-view) .text-view::before, .mindmap-view.right-tools-panel .mindmap-view::before {
