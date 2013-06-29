@@ -133,6 +133,13 @@ body, .tabs-container, .right-tools-panel {
 	font-weight: normal !important;
 }
 
+/* Left side tab icons */
+.tabs-container .pict,
+/* Text/mind map view icons */
+.right-tools-panel .text-view .icon,
+.right-tools-panel .mindmap-view .icon {
+	-webkit-filter: saturate(0);
+}
 /* Left side active tab */
 .tabs-container .tab.active,
 /* Text/mind map view active tab */
@@ -141,6 +148,13 @@ body, .tabs-container, .right-tools-panel {
 	background: transparent none !important;
 	color: #DD4B39 !important;
 	font-weight: bold !important;
+}
+/* Left side active tab icon */
+.tabs-container .active .pict,
+/* Text/mind map view active tab icon */
+.right-tools-panel:not(.mindmap-view) .text-view .icon,
+.right-tools-panel.mindmap-view .mindmap-view .icon {
+	-webkit-filter: hue-rotate(150deg) saturate(4) brightness(1.5);
 }
 .tabs-container .tab.active::before,
 .right-tools-panel:not(.mindmap-view) .text-view::before, .mindmap-view.right-tools-panel .mindmap-view::before {
