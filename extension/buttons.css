@@ -27,6 +27,14 @@
 	border: 1px solid #4D90FE !important;
 }
 
+/* Icons inside buttons */
+button:hover .lock {
+	-webkit-filter: brightness(0.4) !important;
+}
+.settings-section .show-settings-button {
+	-webkit-filter: saturate(0) !important;
+}
+
 /* New wave/wizard button container */
 .new-topic-buttons {
 	border: 0 none transparent !important;
