@@ -1,12 +1,21 @@
 /* Blip toolbars */
 .blip-menu {
-	border: 1px solid rgba(0,0,0,0.1) !important;
 	border-radius: 2px !important;
 	/*overflow: hidden;*/
 }
+	.blip-menu:not(.hidden) {
+		display: inline-block !important;
+	}
+	.blip-menu.read-only-menu {
+		border: 1px solid rgba(0,0,0,0.1) !important;
+	}
+	.blip-menu.edit-menu {
+		border: 1px solid #3079ED !important;
+	}
+
 .wave-panel > * > .blip-menu {
 	border-radius: 2px !important;
-	display: inline-block !important;
+	/*display: inline-block !important;*/
 }
 
 .root-blip ~ .blip-container > .blip-menu-container:not(.fixed) {
@@ -30,51 +39,44 @@
 }
 
 /* View mode blip toolbars */
-.blip-container:not(.edit-mode) > .blip-menu-container .blip-menu button,
-.wave-panel:not(.edit-mode) > * > .blip-menu button {
+.blip-menu.read-only-menu button {
 	background: linear-gradient(#F5F5F5,#F1F1F1) !important;
 	/*border-color: rgba(0,0,0,0.1) transparent !important;*/
 	color: #444 !important;
 }
-.blip-container:not(.edit-mode) > .blip-menu-container .blip-menu button:hover,
-.wave-panel:not(.edit-mode) > * > .blip-menu button:hover {
+.blip-menu.read-only-menu button:hover {
 	background: linear-gradient(#F8F8F8,#F1F1F1) !important;
 	/*box-shadow: none !important;
 	border: 1px solid #C6C6C6 !important;
 	box-sizing: content-box !important;
 	margin: -1px !important;*/
-	box-shadow: 0 0 0 1px #C6C6C6 !important;
+	/*box-shadow: 0 0 0 1px #C6C6C6 !important;*/
 }
-.blip-container:not(.edit-mode) > .blip-menu-container .blip-menu button:active,
-.wave-panel:not(.edit-mode) > * > .blip-menu button:active {
+	.blip-menu.read-only-menu button:hover .icon {
+		-webkit-filter: brightness(0.4) !important;
+	}
+.blip-menu.read-only-menu button:active {
 	background: linear-gradient(#EEE,#E0E0E0) !important;
 	/*box-shadow: inset 0 1px 2px rgba(0,0,0,0.1) !important;
 	border-color: #CCC !important;*/
-	box-shadow: 0 0 0 1px #CCC, inset 0 1px 2px rgba(0,0,0,0.1) !important
+	box-shadow: /*0 0 0 1px #CCC,*/ inset 0 1px 2px rgba(0,0,0,0.1) !important;
 }
 
 /* Edit mode blip toolbars */
-.blip-container.edit-mode > .blip-menu-container .blip-menu,
-.wave-panel.edit-mode > * > .blip-menu {
-	border: 1px solid #3079ED !important;
-}
-/*.blip-container.edit-mode > .blip-menu-container .blip-menu button,
-.wave-panel.edit-mode > .blip-menu button {
+
+/*.blip-menu.edit-menu button {
 	background: linear-gradient(#4D90FE,#4787ED) !important;
 	border-color: #3079ED transparent !important;
 	color: white !important;
 }*/
-.blip-container.edit-mode > .blip-menu-container .blip-menu button:first-child,
-.wave-panel.edit-mode > * > .blip-menu button:first-child {
+.blip-menu.edit-menu button:first-child {
 	border-color: #3079ED !important;
 }
-.blip-container.edit-mode > .blip-menu-container .blip-menu button:active,
-.wave-panel.edit-mode > * > .blip-menu button:active {
-	box-shadow: 0 0 0 1px #2F5BB7 !important;
+.blip-menu.edit-menu button:hover {
+	/*box-shadow: 0 0 0 1px #2F5BB7 !important;*/
 }
-.blip-container.edit-mode > .blip-menu-container .blip-menu button:active,
-.wave-panel.edit-mode > * > .blip-menu button:active {
-	box-shadow: 0 0 0 1px #2F5BB7, inset 0 1px 2px rgba(0,0,0,0.3) !important;
+.blip-menu.edit-menu button:active {
+	box-shadow: /*0 0 0 1px #2F5BB7,*/ inset 0 1px 2px rgba(0,0,0,0.3) !important;
 }
 
 /* Gear menus */
