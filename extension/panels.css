@@ -134,7 +134,7 @@ body, .tabs-container, .right-tools-panel {
 }
 
 /* Left side tab icons */
-.tabs-container .tab:not(.locked) .pict,
+.tabs-container .tab .pict,
 /* Text/mind map view icons */
 .right-tools-panel .text-view .icon,
 .right-tools-panel .mindmap-view .icon {
