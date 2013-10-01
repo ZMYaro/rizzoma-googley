@@ -134,7 +134,7 @@ body, .tabs-container, .right-tools-panel {
 }
 
 /* Left side tab icons */
-.tabs-container .pict,
+.tabs-container .tab:not(.locked) .pict,
 /* Text/mind map view icons */
 .right-tools-panel .text-view .icon,
 .right-tools-panel .mindmap-view .icon {
@@ -150,7 +150,7 @@ body, .tabs-container, .right-tools-panel {
 	font-weight: bold !important;
 }
 /* Left side active tab icon */
-.tabs-container .active .pict {
+.tabs-container .tab.active .pict {
 	-webkit-filter: hue-rotate(150deg) saturate(4) brightness(1.5);
 }
 /* Text/mind map view active tab icon */
@@ -178,7 +178,7 @@ body, .tabs-container, .right-tools-panel {
 	margin-top: 54px !important;
 	height: 80px !important;
 }
-.tabs-container .pict, .tabs-container .topics-pict {
+.tabs-container .tab:not(.locked) .pict, .tabs-container .topics-pict {
 	margin-top: 2px !important;
 	background-position-x: -37px !important
 }
