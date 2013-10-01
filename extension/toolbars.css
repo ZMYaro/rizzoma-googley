@@ -90,6 +90,7 @@
 .blip-container .blip-menu .other-blipmenu-container > .list-menu-button > button,
                 .blip-menu .other-blipmenu-container > .list-menu-button > button {
 	width: 100% !important;
+	text-align: left;
 	background: transparent none !important;
 	border: 0px none transparent !important;
 	color: #333 !important;
