@@ -68,35 +68,45 @@
 	left: -1px !important;
 }
 .bottom-blip-menu {
-	border: 1px solid #D9D9D9 !important;
-	border-top-color: #C0C0C0 !important;
-	border-radius: 0 !important;
-	
-	background-color: white !important;
-	
 	left: -1px !important;
 	right: -1px !important;
-	bottom: -32px !important;
+	/*bottom: -32px !important;*/
+	border: 0 none transparent !important;
+	/*border-bottom-width: 2px !important;*/
+	 border-bottom-left-radius: 2px !important;
+	border-bottom-right-radius: 2px !important;
 }
-.bottom-blip-menu:hover {
+.bottom-blip-menu .blip-reply-button {
+	border: 1px solid #D9D9D9 !important;
+	border-top-color: #C0C0C0 !important;
+	background-color: white !important;
+	overflow: hidden !important;
+}
+.bottom-blip-menu .blip-reply-button:hover {
 	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1) !important;
 }
-.bottom-blip-menu:active {
+.bottom-blip-menu .blip-reply-button:active {
 	box-shadow: inset 0 1px 2px rgba(0,0,0,0.3) !important;
 }
-.bottom-blip-menu button div.text {
+.bottom-blip-menu .blip-reply-button div.text {
 	color: #999 !important;
 	margin-left: 43px !important;
 	margin-top: -3px !important;
 }
-.bottom-blip-menu button div.avatar {
+.bottom-blip-menu .blip-reply-button div.avatar {
 	left: 5px !important;
 	right: auto !important;
 }
-.bottom-blip-menu button div.gradient {
+.blip-container.active.edit-mode .bottom-blip-menu .blip-reply-button div.avatar {
+	left: 55px !important;
+}
+.bottom-blip-menu .blip-reply-button div.gradient {
 	background: linear-gradient(rgba(255,255,255,0) 30%, rgba(255,255,255,1) 80%) !important;
 	left: 4px !important;
 	right: auto !important;
+}
+.blip-container.active.edit-mode .bottom-blip-menu .blip-reply-button div.gradient {
+	left: 54px !important;
 }
 
 .blip-info {
