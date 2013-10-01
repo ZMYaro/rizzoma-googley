@@ -1,4 +1,5 @@
-.common-create-wave-by-wizard, .create-wave-by-wizard, .create-wave, .add-block-button, .manage-participants-form button, .delete-from-wave, .selectBox.button-like, a.button-like, .wave-share-button, .show-more-participants, .mention-recipient-popup button, .task-recipient-popup button, :not(.range-menu) > .button,
+/* Basic button */
+.common-create-wave-by-wizard, .create-wave, .create-wave-by-wizard, .add-block-button, .manage-participants-form button, .delete-from-wave, .selectBox.button-like, a.button-like, .wave-share-button, .show-more-participants, .mention-recipient-popup button, .task-recipient-popup button, :not(.range-menu) > .button,
 .settings-section {
 	background: linear-gradient(#F5F5F5,#F1F1F1) !important;
 	box-shadow: none !important;
@@ -9,7 +10,8 @@
 	text-shadow: none !important;
 }
 
-.common-create-wave-by-wizard:not([disabled="disabled"]):hover, .create-wave-by-wizard:not([disabled="disabled"]):hover, .create-wave:not([disabled="disabled"]):hover, .add-block-button:not([disabled="disabled"]):hover, .manage-participants-form button:hover, .delete-from-wave:not([disabled="disabled"]):hover, .wave-share-button:not([disabled="disabled"]):hover, .show-more-participants:not([disabled="disabled"]):hover, .selectBox.button-like:not(.selectBox-disabled):hover, a.button-like:hover, .mention-recipient-popup button:not([disabled="disabled"]):hover, .task-recipient-popup button:not([disabled="disabled"]):hover, :not(.range-menu) > .button:not([disabled="disabled"]):hover,
+/* Basic button hover state */
+.common-create-wave-by-wizard:enabled:hover, .create-wave:enabled:hover, .create-wave-by-wizard:enabled:hover, .add-block-button:enabled:hover, .manage-participants-form button:hover, .delete-from-wave:enabled:hover, .wave-share-button:enabled:hover, .show-more-participants:enabled:hover, .selectBox.button-like:not(.selectBox-disabled):hover, a.button-like:hover, .mention-recipient-popup button:enabled:hover, .task-recipient-popup button:enabled:hover, :not(.range-menu) > .button:enabled:hover,
 .settings-section:hover {
 	background: linear-gradient(#F8F8F8,#F1F1F1) !important;
 	box-shadow: none !important;
@@ -17,14 +19,15 @@
 	color: #444 !important;
 
 }
-.common-create-wave-by-wizard:not([disabled="disabled"]):active, .create-wave-by-wizard:not([disabled="disabled"]):active, .create-wave:not([disabled="disabled"]):active, .add-block-button:not([disabled="disabled"]):active, .manage-participants-form button:active, .delete-from-wave:not([disabled="disabled"]):active, .wave-share-button:not([disabled="disabled"]):active, .show-more-participants:not([disabled="disabled"]):active, .selectBox.button-like:not(.selectBox-disabled):active, a.button-like:active, .mention-recipient-popup button:not([disabled="disabled"]):active, .task-recipient-popup button:not([disabled="disabled"]):active, :not(.range-menu) > .button:not([disabled="disabled"]):active,
+/* Basic button active state */
+.common-create-wave-by-wizard:enabled:active, .create-wave:enabled:active, .create-wave-by-wizard:enabled:active, .add-block-button:enabled:active, .manage-participants-form button:active, .delete-from-wave:enabled:active, .wave-share-button:enabled:active, .show-more-participants:enabled:active, .selectBox.button-like:not(.selectBox-disabled):active, a.button-like:active, .mention-recipient-popup button:enabled:active, .task-recipient-popup button:enabled:active, :not(.range-menu) > .button:enabled:active,
 .settings-section:active {
 	background: linear-gradient(#EEE,#E0E0E0) !important;
 	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1) !important;
 	border-color: #CCC !important;
 }
-
-.common-create-wave-by-wizard:focus, .create-wave-by-wizard:focus, .create-wave:focus, .add-block-button:focus, .manage-participants-form button:focus, .delete-from-wave:focus, .selectBox.button-like:focus, a.button-like:focus, .wave-share-button:focus, .show-more-participants:focus, .mention-recipient-popup button:focus, .task-recipient-popup button:focus, :not(.range-menu) > .button:focus {
+/* Basic button focus state */
+.common-create-wave-by-wizard:focus, .create-wave:focus, .create-wave-by-wizard:focus, .add-block-button:focus, .manage-participants-form button:focus, .delete-from-wave:focus, .selectBox.button-like:focus, a.button-like:focus, .wave-share-button:focus, .show-more-participants:focus, .mention-recipient-popup button:focus, .task-recipient-popup button:focus, :not(.range-menu) > .button:focus {
 	border: 1px solid #4D90FE !important;
 }
 
@@ -39,6 +42,15 @@ button:hover .lock {
 /* New wave/wizard button container */
 .new-topic-buttons {
 	border: 0 none transparent !important;
+}
+.create-wave {
+	   border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+.create-wave-by-wizard {
+	   border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	margin-left: -1px !important;
 }
 
 
@@ -94,6 +106,51 @@ button:hover .lock {
 .insert-gadget-container .search-icon {
 	height: 30px !important;
 }
+
+/* Red buttons */
+/*.common-create-wave-by-wizard, .create-wave, .create-wave-by-wizard,*/ .ctm-create-topic {
+	background-color: #D14836 !important;
+	background-image: -webkit-linear-gradient(top, #DD4B39, #D14836) !important;
+	background-image:         linear-gradient(top, #DD4B39, #D14836) !important;
+	border: 1px solid transparent !important;
+	color: white !important;
+	text-shadow: none !important;
+	font-weight: bold !important;
+}
+/*.common-create-wave-by-wizard:hover, .create-wave:hover, .create-wave-by-wizard:hover,*/ .ctm-create-topic:hover {
+	background-color: #C53727 !important;
+	background-image: -webkit-linear-gradient(top, #DD4B39, #C53727) !important;
+	background-image:         linear-gradient(top, #DD4B39, #C53727) !important;
+	border-color: #B0281A !important;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2) !important;
+	        box-shadow: 0 1px 1px rgba(0,0,0,0.2) !important;
+}
+/*.common-create-wave-by-wizard:active, .create-wave:active, .create-wave-by-wizard:active,*/ .ctm-create-topic:active {
+	background-color: #B0281A !important;
+	background-image: -webkit-linear-gradient(top, #DD4B39, #B0281A) !important;
+	background-image:         linear-gradient(top, #DD4B39, #B0281A) !important;
+	border-color: #992A1B !important;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3) !important;
+	        box-shadow: inset 0 1px 2px rgba(0,0,0,0.3) !important;
+}
+/*.common-create-wave-by-wizard:focus, .create-wave:focus, .create-wave-by-wizard:focus,*/ .ctm-create-topic:focus {
+	-webkit-box-shadow: inset 0 0 0 1px white !important;
+	        box-shadow: inset 0 0 0 1px white !important;
+}
+/* New wave button and shadow button shown with new wave wizard */
+/*.common-create-wave-by-wizard, .create-wave, .create-wave-by-wizard, .ctm-create-button {
+	text-transform: uppercase !important;
+}*/
+/* Shadow button only */
+/*.ctm-create-button {
+	text-shadow: none !important;
+	font-size: 12px !important;
+}*/
+/* Magic wand icon */
+/*.wizard-icon {
+	background-image: url('/s/img/8903d1e6.wizard-light.png') !important;
+	-webkit-filter: brightness(1.2) !important;
+}*/
 
 /* Green unread buttons */
 .search .global-next-unread {
