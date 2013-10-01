@@ -8,14 +8,13 @@
 	}
 	.blip-menu .read-only-menu, .blip-menu .edit-menu {
 		border-radius: 2px !important;
-		border: 1px solid !important;
 	}
 	.blip-menu .read-only-menu {
 		/*border-color: rgba(0,0,0,0.1) !important;*/
-		border-color: #C5C9CD !important;
+		border: 1px solid #C5C9CD !important;
 	}
-	.blip-menu .edit-menu {
-		border-color: #3079ED !important;
+	.blip-menu .edit-menu, .bottom-blip-menu .finish-edit-button {
+		border: 1px solid #3079ED !important;
 	}
 
 .wave-panel > * > .blip-menu {
@@ -32,10 +31,18 @@
 	border-radius: 0 !important;
 	/*margin-left: -2px !important;*/
 }
-.blip-menu > button:first-child {
+.blip-menu > button:first-child,
+.blip-container:not(:last-child) > .bottom-blip-menu .finish-edit-button {
 	   border-top-left-radius: 2px !important;
 	border-bottom-left-radius: 2px !important;
 	/*margin-left: 0 !important;*/
+}
+.blip-container:not(:last-child) > .bottom-blip-menu .finish-edit-button {
+	   border-top-right-radius: 2px !important;
+	border-bottom-right-radius: 2px !important;
+}
+.bottom-blip-menu .finish-edit-button {
+	border-bottom-left-radius: 2px !important;
 }
 /*.blip-menu > button:last-child*/
 .blip-menu .gearwheel {
@@ -76,13 +83,15 @@
 	border-color: #3079ED transparent !important;
 	color: white !important;
 }*/
-.blip-menu .edit-menu button:first-child {
+.blip-menu .edit-menu button:first-child, {
 	border-color: #3079ED !important;
 }
-.blip-menu .edit-menu button:hover {
+.blip-menu .edit-menu button:hover,
+.bottom-blip-menu .finish-edit-button:hover {
 	/*box-shadow: 0 0 0 1px #2F5BB7 !important;*/
 }
-.blip-menu .edit-menu button:active {
+.blip-menu .edit-menu button:active,
+.bottom-blip-menu .finish-edit-button:active {
 	box-shadow: /*0 0 0 1px #2F5BB7,*/ inset 0 1px 2px rgba(0,0,0,0.3) !important;
 }
 
