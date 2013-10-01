@@ -157,8 +157,20 @@ button:hover .lock {
 	margin-top: -30px !important;
 	border-radius: 2px !important;
 }
-.search .global-next-unread:enabled:not(.disabled):active, .right-tools-panel .next-unread-blip:enabled:not(.disabled):active, .right-tools-panel .read-all:enabled:not(.disabled):active {
-	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1) !important;
+.search .global-next-unread:enabled:not(.disabled), .right-tools-panel .next-unread-blip:enabled:not(.disabled), .right-tools-panel .read-all:not(.disabled), .right-tools-panel .read-all-button:not(.disabled) {
+	background-image: linear-gradient(#A1DA3E, #9CD42E) !important;
+	border-color: #98C49F !important;
+	box-shadow: none !important;
+	outline: none !important;
+}
+.search .global-next-unread:enabled:not(.disabled):hover , .right-tools-panel .next-unread-blip:enabled:not(.disabled):hover , .right-tools-panel .read-all:not(.disabled):hover, .right-tools-panel .read-all-button:not(.disabled):hover {
+	background-image: linear-gradient(#A3DC41, #94CB25) !important;
+	border-color: #72BA14 !important;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1) !important;
+}
+.search .global-next-unread:enabled:not(.disabled):active, .right-tools-panel .next-unread-blip:enabled:not(.disabled):active, .right-tools-panel .read-all:not(.disabled):active, .right-tools-panel .read-all-button:not(.disabled):active {
+	background-image: linear-gradient(#A1DA3E, #94CB25) !important;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.3) !important;
 }
 
 /* Search box drop-down menus */
