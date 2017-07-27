@@ -4,26 +4,24 @@
 	"version": "1.5.1",
 	"description": "Changes the Rizzoma interface to look like Gmail and other Google apps.",
 	"icons": {
-		"48": "icon_48.png",
-		"128": "icon_128.png"
+		"48": "images/icon_48.png",
+		"128": "images/icon_128.png"
 	},
 	
 	"permissions": [
-		"*://rizzoma.com/topic/*",
-		"*://pre.rizzoma.com/topic/*"
+		"*://rizzoma.com/topic/*"
 	],
 	
 	"content_scripts": [{
 		"matches": [
-			"*://rizzoma.com/topic/*",
-			"*://pre.rizzoma.com/topic/*"
+			"*://rizzoma.com/topic/*"
 		],
 		"css": [
-			"panels.css",
-			"buttons.css",
-			"popups.css",
-			"wave.css",
-			"toolbars.css"
+			"styles/panels.css",
+			"styles/buttons.css",
+			"styles/popups.css",
+			"styles/wave.css",
+			"styles/toolbars.css"
 		]
 	}]
 }
