@@ -17,11 +17,14 @@
 			"*://rizzoma.com/topic/*"
 		],
 		"css": [
-			"styles/panels.css",
 			"styles/buttons.css",
+			"styles/panels.css",
 			"styles/popups.css",
-			"styles/wave.css",
-			"styles/toolbars.css"
+			"styles/toolbars.css",
+			"styles/wave.css"
+		],
+		"js": [
+			"scripts/labels.js"
 		]
 	}]
 }
