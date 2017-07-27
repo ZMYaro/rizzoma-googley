@@ -9,7 +9,6 @@
 	},
 	
 	"permissions": [
-		"cookies",
 		"*://rizzoma.com/topic/*",
 		"*://pre.rizzoma.com/topic/*"
 	],
