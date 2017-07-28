@@ -28,8 +28,16 @@ if (document.querySelector('.message-container > .create-wave')) {
 	document.querySelector('.message-container > .create-wave').textContent = 'Create new wave';
 }
 
-// New wave wizard
-document.querySelector('.create-wave-by-wizard, .common-create-wave-by-wizard').title = 'Create new wave';
+// New wave button/wizard
+if (document.querySelector('.js-common-create-wave')) {
+	document.querySelector('.js-common-create-wave').title = 'Create new wave';
+}
+if (document.querySelector('.create-wave-by-wizard')) {
+	document.querySelector('.create-wave-by-wizard').title = 'Create new wave with wizard';
+}
+if (document.querySelector('.common-create-wave-by-wizard')) {
+	document.querySelector('.common-create-wave-by-wizard').title = 'Create new wave';
+}
 document.querySelector('.create-wave-by-wizard, .common-create-wave-by-wizard').addEventListener('click', function () {
 	document.querySelector('.ctm-create-topic').textContent = 'Create new wave';
 }, false);
