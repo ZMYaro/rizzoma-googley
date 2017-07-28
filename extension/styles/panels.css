@@ -193,3 +193,36 @@ body, .tabs-container, .right-tools-panel {
 	height: 1px;
 	background-color: #E5E5E5;
 }
+
+/* Keyboard shortcut list */
+.folded-tips-video {
+	/* Hide the video link since it is also in the new wave wizard */
+	display: none !important;
+}
+.tips-box {
+	height: 56px !important;
+}
+.tips-content {
+	padding-bottom: 0 !important;
+	padding-top: 6px !important;
+}
+#navigation-panel {
+	padding-bottom: 56px !important;
+}
+#navigation-panel.tips-hidden .tips-box, #navigation-panel.first-visit.tips-hidden .tips-box {
+	height: 4px !important;
+}
+#navigation-panel.tips-hidden, #navigation-panel.tips-hidden.first-visit {
+	padding-bottom: 4px !important;
+}
+
+/* Right side expand/collapse buttons */
+.hide-replies, .show-replies,
+/* Right side blue buttons */
+.insert-reply, .insert-mention, .insert-task, .insert-tag,
+/* Rizzoma logo, LinkedIn button, and CWS link in search panel */
+.tips-head-container,
+/* Hide the video link since it is also in the new wave wizard */
+.folded-tips-video {
+	display: none !important;
+}
