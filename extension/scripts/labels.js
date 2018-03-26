@@ -48,9 +48,6 @@ if (document.querySelector('.create-wave-by-wizard, .common-create-wave-by-wizar
 
 // Wave panel
 function setParticipantSearch() {
-	console.log(document.querySelectorAll('.show-more-participants').length);
-	console.log(document.querySelector('.show-more-participants').title);
-	console.log('----------------');
 	if (!document.querySelector('.show-more-participants')) {
 		requestAnimationFrame(setParticipantSearch);
 		return;
@@ -69,7 +66,7 @@ try {
 } catch (err) {
 	// Must use jQuery version to add a popstate listener to Rizzoma.
 	document.body.setAttribute('onmousemove',
-		'console.log(\'mouse moved!!!!!!\'); $(window).on(\'popstate\', ' +
+		'$(window).on(\'popstate\', ' +
 		setParticipantSearch.toString() +
 		'); document.body.removeAttribute(\'onmousemove\');');
 }
