@@ -18,6 +18,20 @@ if (document.getElementById('js-task-list-query')) {
 	document.getElementById('js-task-list-query').placeholder = 'Search your tasks';
 }
 
+// [/] focuses the search box.
+window.addEventListener('keydown', (ev) => {
+	if (ev.keyCode !== 191) {
+		return;
+	}
+	// Check for panels that are not display: none because display: block does not get added until you change tabs.
+	// None have display: none either, but first one (returned by querySelector) will be the one you want.
+	var currentSearchBox = document.querySelector('.search:not([style="display: none;"]) input[type="text"]')
+	if (!currentSearchBox) {
+		return;
+	}
+	ev.preventDefault();
+	currentSearchBox.focus();
+});
 
 
 // New wave buttons
