@@ -20,15 +20,28 @@ if (document.getElementById('js-task-list-query')) {
 
 // [/] focuses the search box.
 window.addEventListener('keydown', (ev) => {
+	// [/] key.
 	if (ev.keyCode !== 191) {
 		return;
 	}
+	
+	// Do not trigger when a form element or other editable field is focused.
+	if (document.activeElement &&
+			(document.activeElement.tagName === 'INPUT' ||
+			document.activeElement.tagName === 'SELECT' ||
+			document.activeElement.contentEditable == 'true')) {
+		console.log ('not here!');
+		return;
+	}
+	
 	// Check for panels that are not display: none because display: block does not get added until you change tabs.
-	// None have display: none either, but first one (returned by querySelector) will be the one you want.
+	// None have display: none at first either, but the first one (returned by querySelector) will be the one you want.
 	var currentSearchBox = document.querySelector('.search:not([style="display: none;"]) input[type="text"]')
 	if (!currentSearchBox) {
 		return;
 	}
+	
+	// Focus the search box.
 	ev.preventDefault();
 	currentSearchBox.focus();
 });
